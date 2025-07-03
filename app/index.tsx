@@ -1,15 +1,15 @@
-import { Text, View } from "react-native";
+import { StatusBar } from "react-native";
+import { NativeRouter } from "react-router-native";
+
+import Main from "./components/Main";
 
 export default function Index() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
-    </View>
+    <>
+      <NativeRouter>
+        <Main />;
+      </NativeRouter>
+      <StatusBar barStyle="default" />
+    </>
   );
 }
